@@ -595,6 +595,24 @@ export default function ResumePage() {
                     </li>
                   </ul>
                 </div>
+
+                <div>
+                  <h4 className="font-semibold text-emerald-700 dark:text-emerald-400 mb-2">
+                    협업 및 DevOps 환경 구축
+                  </h4>
+                  <ul className="list-disc list-inside space-y-1 text-sm text-gray-700 dark:text-gray-300">
+                    <li>GitLab을 활용한 형상 관리 및 브랜치 전략 운영</li>
+                    <li>Jenkins를 통한 CI/CD 자동 배포 운영</li>
+                    <li>
+                      Postman, Swagger UI, Figma를 활용해 백엔드, 디자이너와의
+                      원할한 협업 환경 구축
+                    </li>
+                    <li>
+                      Notion을 통한 프로젝트 일정 관리 및 팀 단위 업무 진행 상황
+                      관리
+                    </li>
+                  </ul>
+                </div>
               </StaggeredContainer>
             </CardContent>
           </Card>
@@ -659,25 +677,66 @@ export default function ResumePage() {
                 </AnimatedSection>
 
                 <AnimatedSection delay={1400}>
-                  <div>
-                    <h4 className="font-semibold text-emerald-700 dark:text-emerald-400 mb-2">
-                      웹 서비스 리뉴얼 및 마이그레이션
-                    </h4>
-                    <ul className="list-disc list-inside space-y-1 text-sm text-gray-700 dark:text-gray-300">
-                      <li>
-                        PHP 기반 레거시 프로젝트를 Nuxt + Vue2 환경으로 전환,
-                        유지보수성과 확장성 강화
-                      </li>
-                      <li>
-                        B2C 서비스 → B2B 서비스 확장 및 운영 서비스 1종 →
-                        4종으로 다각화
-                      </li>
-                      <li>
-                        Vue3 + TypeScript 기반 B2B 고객 전용 대시보드 및 예약
-                        시스템 개발
-                      </li>
-                    </ul>
-                  </div>
+                  <StaggeredContainer staggerDelay={200} className="space-y-4">
+                    <div>
+                      <h4 className="font-semibold text-emerald-700 dark:text-emerald-400 mb-2">
+                        웹 서비스 리뉴얼 및 마이그레이션
+                      </h4>
+                      <ul className="list-disc list-inside space-y-1 text-sm text-gray-700 dark:text-gray-300">
+                        <li>
+                          PHP 기반 레거시 프로젝트를 Nuxt + Vue2 환경으로 전환,
+                          유지보수성과 확장성 강화
+                        </li>
+                        <li>
+                          B2C 서비스 → B2B 서비스 확장 및 운영 서비스 1종 →
+                          4종으로 다각화
+                        </li>
+                        <li>
+                          Vue3 + TypeScript 기반 B2B 고객 전용 대시보드 및 예약
+                          시스템 개발
+                        </li>
+                      </ul>
+                    </div>
+
+                    <div>
+                      <h4 className="font-semibold text-emerald-700 dark:text-emerald-400 mb-2">
+                        프론트엔드 개발 및 인터랙션 구현
+                      </h4>
+                      <ul className="list-disc list-inside space-y-1 text-sm text-gray-700 dark:text-gray-300">
+                        <li>
+                          HTML, SCSS, Javascript 기반의 웹 퍼블리싱 작업 수행
+                        </li>
+                        <li>
+                          Axios를 통한 REST API 통신 및 데이터 바인딩 처리
+                        </li>
+                        <li>
+                          TweenMax & ScrollMagic 활용하여 서비스 소개 페이지에
+                          인터랙티브 효과 구현
+                        </li>
+                      </ul>
+                    </div>
+
+                    <div>
+                      <h4 className="font-semibold text-emerald-700 dark:text-emerald-400 mb-2">
+                        데이터 분석 및 운영 환경 개선
+                      </h4>
+                      <ul className="list-disc list-inside space-y-1 text-sm text-gray-700 dark:text-gray-300">
+                        <li>
+                          Google Analytics UA -&gt; GA4 전환 작업 수행, 이벤트
+                          기반 분석 체계 도입
+                        </li>
+                        <li>
+                          Zeplin, Postman, Slack을 활용한 디자이너, 기획자,
+                          백엔드와의 유기적 협업
+                        </li>
+                        <li>Git 기반 형상 관리 및 브랜치 전략 적용</li>
+                        <li>
+                          Notion을 활용한 프로젝트 일정 관리 및 커뮤니케이션
+                          체계 정립
+                        </li>
+                      </ul>
+                    </div>
+                  </StaggeredContainer>
                 </AnimatedSection>
               </div>
             </CardContent>
