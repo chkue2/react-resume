@@ -12,7 +12,7 @@ function Skeleton({
         className
       )}
       {...props}
-    ></div>
+    />
   );
 }
 

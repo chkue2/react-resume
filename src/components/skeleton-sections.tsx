@@ -180,13 +180,19 @@ export function MilitarySkeleton() {
 export function DetailedExperienceSkeleton({ title }: { title: string }) {
   return (
     <Card className="mb-6 border-0 shadow-lg dark:bg-gray-800/50 backdrop-blur-sm">
-      <CardHeader>
-        <div className="flex items-center gap-2">
+      <CardHeader className="p-0">
+        {" "}
+        {/* CardHeader의 패딩 제거 */}
+        <div className="flex items-center gap-2 p-6">
+          {" "}
+          {/* Trigger와 유사하게 패딩 추가 */}
           <Skeleton className="h-5 w-5 rounded" />
           <Skeleton className="h-6 w-80" />
         </div>
       </CardHeader>
-      <CardContent>
+      <CardContent className="p-6 pt-0">
+        {" "}
+        {/* CardContent의 패딩 조정 */}
         <div className="space-y-4">
           {title === "홈핏" && (
             <div className="bg-emerald-50 dark:bg-emerald-900/20 p-4 rounded-lg border dark:border-emerald-800">
@@ -252,8 +258,43 @@ export function PortfolioSkeleton() {
         <Skeleton className="h-4 w-full" />
         <Skeleton className="h-4 w-5/6" />
         <Skeleton className="h-4 w-3/4" />
-        <Skeleton className="h-10 w-32 rounded-md" />
+        <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+          {[1, 2, 3].map((i) => (
+            <Card
+              key={i}
+              className="overflow-hidden rounded-lg shadow-lg dark:bg-gray-800/50"
+            >
+              <Skeleton className="w-full h-48 rounded-t-lg" />
+              <CardHeader>
+                <Skeleton className="h-5 w-3/4 mb-2" />
+                <Skeleton className="h-4 w-full" />
+                <Skeleton className="h-4 w-5/6" />
+              </CardHeader>
+              <CardContent className="flex justify-end p-4 pt-0">
+                <Skeleton className="h-10 w-32 rounded-md" />
+              </CardContent>
+            </Card>
+          ))}
+        </div>
       </CardContent>
     </Card>
+  );
+}
+
+export function SkillProgressBarSkeleton() {
+  return (
+    <div className="space-y-2">
+      <div className="flex items-center justify-between">
+        <Skeleton className="h-6 w-20 rounded-full" />
+        <Skeleton className="h-4 w-10" />
+      </div>
+      <Skeleton className="h-2 w-full rounded-full" />
+    </div>
+  );
+}
+
+export function ScrollToTopButtonSkeleton() {
+  return (
+    <Skeleton className="fixed bottom-4 right-4 z-50 h-10 w-10 rounded-full p-2 shadow-lg" />
   );
 }
