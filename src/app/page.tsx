@@ -36,7 +36,6 @@ import {
 import { ThemeIndicator } from "@/components/theme-indicator";
 import { CareerDisplay } from "@/components/career-display";
 import { CurrentTenure } from "@/components/current-tenure";
-import { CareerBreakdown } from "@/components/career-breakdown";
 import { SkillProgressBar } from "@/components/skill-progress-bar";
 import {
   Accordion,
