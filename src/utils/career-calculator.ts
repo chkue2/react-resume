@@ -23,8 +23,8 @@ export function calculateTotalCareer(periods: CareerPeriod[]): string {
       [endYear, endMonth] = period.endDate.split(".").map(Number);
     }
 
-    // 시작일과 종료일 사이의 개월 수 계산
-    const monthsDiff = (endYear - startYear) * 12 + (endMonth - startMonth);
+    // 시작일과 종료일 사이의 개월 수 계산 (시작 월과 종료 월을 모두 포함)
+    const monthsDiff = (endYear - startYear) * 12 + (endMonth - startMonth) + 1;
     totalMonths += monthsDiff;
   });
 
